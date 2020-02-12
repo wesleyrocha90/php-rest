@@ -1,5 +1,11 @@
 <?php
 
-$query = $_SERVER['QUERY_STRING'];
+class UserController {
 
-echo 'user?'.$query;
+    public function handleRequest($requestObject) {
+        // switch($requestObject->$method) {
+
+        // }
+        echo $requestObject['method'];
+    }
+}
